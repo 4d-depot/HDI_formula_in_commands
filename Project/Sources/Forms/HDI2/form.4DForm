@@ -1,0 +1,566 @@
+{
+	"destination": "detailScreen",
+	"windowSizingX": "fixed",
+	"windowSizingY": "fixed",
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"menuBar": "Menu Bar #1",
+	"markerHeader": 15,
+	"markerBody": 200,
+	"markerBreak": 220,
+	"markerFooter": 240,
+	"events": [
+		"onLoad"
+	],
+	"method": "method.4dm",
+	"pageFormat": {
+		"paperName": "A4",
+		"paperWidth": "842pt",
+		"paperHeight": "595pt"
+	},
+	"pages": [
+		{
+			"objects": {
+				"Tab Control": {
+					"type": "tab",
+					"top": 22,
+					"left": 23,
+					"width": 1027,
+					"height": 856,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "_TabTitles",
+					"dataSourceTypeHint": "arrayText",
+					"action": "gotoPage",
+					"events": [
+						"onClick"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information": {
+					"type": "input",
+					"top": 119,
+					"left": 51,
+					"width": 966,
+					"height": 720,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[0].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		},
+		{
+			"objects": {
+				"information1": {
+					"type": "input",
+					"top": 59,
+					"left": 51,
+					"width": 966,
+					"height": 80,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[1].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Trace": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 849,
+					"left": 30,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingY": "move"
+				},
+				"countriescsv6": {
+					"type": "input",
+					"top": 200,
+					"left": 40,
+					"width": 230,
+					"height": 480,
+					"dataSource": "Form:C1466.Numbers",
+					"dataSourceTypeHint": "collection",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"countriescsv7": {
+					"type": "input",
+					"top": 200,
+					"left": 800,
+					"width": 230,
+					"height": 480,
+					"dataSource": "Form:C1466.Doubles",
+					"dataSourceTypeHint": "collection",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button26": {
+					"type": "button",
+					"top": 235,
+					"left": 367,
+					"width": 320,
+					"height": 20,
+					"dataSource": "Button",
+					"text": "Map numbers =>",
+					"focusable": false,
+					"method": "ObjectMethods/Button26.4dm",
+					"events": [
+						"onClick"
+					]
+				}
+			},
+			"entryOrder": [
+				"information1",
+				"Trace",
+				"countriescsv6",
+				"countriescsv7",
+				"Button26"
+			]
+		},
+		{
+			"objects": {
+				"information2": {
+					"type": "input",
+					"top": 59,
+					"left": 51,
+					"width": 966,
+					"height": 80,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[2].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"countriescsv4": {
+					"type": "input",
+					"top": 200,
+					"left": 40,
+					"width": 280,
+					"height": 480,
+					"dataSource": "Form:C1466.PricesList",
+					"dataSourceTypeHint": "collection",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Variable7": {
+					"type": "input",
+					"top": 329,
+					"left": 600,
+					"width": 140,
+					"height": 16,
+					"dataSource": "Form:C1466.ReduceRes",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button17": {
+					"type": "button",
+					"top": 465,
+					"left": 420,
+					"width": 320,
+					"height": 20,
+					"dataSource": "Button",
+					"text": "Remove first element and calculate again",
+					"focusable": false,
+					"method": "ObjectMethods/Button17.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Text15": {
+					"type": "text",
+					"top": 330,
+					"left": 400,
+					"width": 180,
+					"height": 15,
+					"textAlign": "right",
+					"text": "Total Price Excl Tax:"
+				},
+				"Button5": {
+					"type": "button",
+					"top": 276,
+					"left": 420,
+					"width": 320,
+					"height": 20,
+					"dataSource": "Button",
+					"text": "Calculate values !",
+					"focusable": false,
+					"method": "ObjectMethods/Button5.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Trace1": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 849,
+					"left": 30,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingY": "move"
+				}
+			}
+		},
+		{
+			"objects": {
+				"countriesobj1": {
+					"type": "input",
+					"top": 204,
+					"left": 40,
+					"width": 320,
+					"height": 496,
+					"dataSource": "Form:C1466.CountriesObj",
+					"dataSourceTypeHint": "collection",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"countriesobj2": {
+					"type": "input",
+					"top": 204,
+					"left": 702,
+					"width": 320,
+					"height": 496,
+					"dataSource": "Form:C1466.FindRes",
+					"dataSourceTypeHint": "collection",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "none",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button19": {
+					"type": "button",
+					"top": 217,
+					"left": 417,
+					"width": 220,
+					"height": 20,
+					"text": "Find Asian countries in the list",
+					"focusable": false,
+					"method": "ObjectMethods/Button19.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"Variable6": {
+					"type": "input",
+					"top": 257,
+					"left": 568,
+					"width": 69,
+					"height": 16,
+					"dataSource": "Form:C1466.ASRes",
+					"focusable": false,
+					"enterable": false,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text24": {
+					"type": "text",
+					"top": 184,
+					"left": 140,
+					"width": 220,
+					"height": 15,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"text": "CountriesObj"
+				},
+				"Text26": {
+					"type": "text",
+					"top": 184,
+					"left": 742,
+					"width": 280,
+					"height": 15,
+					"stroke": "#696969",
+					"textAlign": "right",
+					"text": "FindRes"
+				},
+				"information3": {
+					"type": "input",
+					"top": 59,
+					"left": 51,
+					"width": 966,
+					"height": 128,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[3].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Text": {
+					"type": "text",
+					"text": "First country Index:",
+					"top": 256,
+					"left": 453,
+					"width": 108,
+					"height": 15,
+					"textAlign": "right"
+				},
+				"Trace2": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 849,
+					"left": 30,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingY": "move"
+				}
+			}
+		},
+		{
+			"objects": {
+				"Subform": {
+					"type": "subform",
+					"left": 621,
+					"top": 234,
+					"width": 225,
+					"height": 50,
+					"detailForm": "SubForm",
+					"borderStyle": "sunken"
+				},
+				"Button": {
+					"type": "button",
+					"text": "Increment value in subform",
+					"top": 249,
+					"left": 350,
+					"width": 228,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "",
+					"method": "ObjectMethods/Button.4dm"
+				},
+				"Button1": {
+					"type": "button",
+					"text": "Increment value in a form",
+					"top": 485,
+					"left": 350,
+					"width": 228,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "",
+					"method": "ObjectMethods/Button1.4dm"
+				},
+				"Trace3": {
+					"type": "checkbox",
+					"text": "Trace",
+					"top": 849,
+					"left": 30,
+					"width": 117,
+					"height": 18,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "Form:C1466.trace",
+					"sizingY": "move"
+				},
+				"Button2": {
+					"type": "button",
+					"text": "Open form",
+					"top": 485,
+					"left": 94,
+					"width": 228,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"method": "ObjectMethods/Button2.4dm"
+				},
+				"information4": {
+					"type": "input",
+					"top": 59,
+					"left": 51,
+					"width": 966,
+					"height": 128,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[4].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"information5": {
+					"type": "input",
+					"top": 377,
+					"left": 51,
+					"width": 966,
+					"height": 80,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[5].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"Button3": {
+					"type": "button",
+					"text": "Increment value in a worker",
+					"top": 706,
+					"left": 350,
+					"width": 228,
+					"height": 21,
+					"events": [
+						"onClick"
+					],
+					"dataSource": "",
+					"method": "ObjectMethods/Button3.4dm"
+				},
+				"ValueFromWorker": {
+					"type": "input",
+					"left": 628,
+					"top": 708,
+					"width": 225,
+					"height": 16,
+					"dataSourceTypeHint": "integer"
+				},
+				"information6": {
+					"type": "input",
+					"top": 603,
+					"left": 51,
+					"width": 966,
+					"height": 80,
+					"sizingX": "grow",
+					"sizingY": "grow",
+					"dataSource": "Infos[6].Description",
+					"focusable": false,
+					"fill": "transparent",
+					"borderStyle": "none",
+					"enterable": false,
+					"styledText": true,
+					"contextMenu": "none",
+					"dragging": "none",
+					"dropping": "custom",
+					"events": [
+						"onDataChange"
+					]
+				}
+			}
+		}
+	],
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {},
+			"Guides": {},
+			"View 3": {},
+			"View 4": {},
+			"View 5": {},
+			"View 6": {},
+			"View 7": {},
+			"View 8": {},
+			"View 9": {}
+		}
+	},
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"geometryStamp": 756
+}
